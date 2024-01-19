@@ -1,12 +1,19 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { ConfigModule } from '@nestjs/config';
 import { GoogleSheetModule } from 'nest-google-sheet-connector';
-// import credentials from "../src/"
+
 
 
 @Module({
-  imports: [GoogleSheetModule.register(credentials)],
+  imports: [
+    ConfigModule.forRoot({
+      envFilePath: ['.env'],
+      isGlobal: true,
+    }),
+    GoogleSheetModule.register(credentials),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
