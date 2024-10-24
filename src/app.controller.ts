@@ -4,7 +4,7 @@ import { WriteCellDto } from './cell-dto/writeCell.dto';
 import { ReadCellDto } from './cell-dto/readCell.dto';
 import { ReadRangeDto } from './cell-dto/readRange.dto';
 import { WriteRangeDto } from './cell-dto/writeRange.dto';
-import { GoogleSheetConnectorService } from 'nest-google-sheet-connector';
+import { GoogleSheetConnectorService } from 'nest-google-sheet-connector/src';
 
 @Controller()
 export class AppController {

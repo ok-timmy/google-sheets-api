@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { GoogleSheetConnectorService } from 'nest-google-sheet-connector';
+import { GoogleSheetConnectorService } from 'nest-google-sheet-connector/src';
 // import { JWT } from 'google-auth-library';
 // import { google, sheets_v4 } from 'googleapis';
 // import { GaxiosPromise } from 'googleapis-common';
